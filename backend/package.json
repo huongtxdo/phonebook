@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "\"Testing testing\""
+    "test": "\"Testing testing\"",
+    "build:ui": "rm -rf build && cd ../frontend/ && npm run build && cp -rf build ../backend",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "author": "Huong Do",
   "license": "ISC",
