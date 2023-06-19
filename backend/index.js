@@ -19,7 +19,7 @@ app.use(
   })
 );
 app.use(cors());
-app.use(express.status("build"));
+app.use(express.static("build"));
 
 let persons = [
   {
