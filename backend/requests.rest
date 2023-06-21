@@ -1,0 +1,23 @@
+GET http://localhost:3001/api/persons
+###
+GET http://localhost:3001/info
+###
+GET http://localhost:3001/api/persons/649098d6021412c27d026a3f
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Mary Poppendieck",
+    "number": "39-23-6423122"
+}
+###
+DELETE http://localhost:3001/api/persons/6492e72aae28fc011244df01
+###
+PUT http://localhost:3001/api/persons/6492db5b0d76a7c99098bf21
+Content-Type: application/json
+
+{
+    "name": "Huy",
+    "number": "123-456-789"
+}
