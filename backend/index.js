@@ -66,28 +66,6 @@ app.get("/api/persons/:id", (request, response, next) => {
 app.post("/api/persons", (request, response, next) => {
   const body = request.body;
 
-  // if (!body.name || !body.number) {
-  //   return response.status(400).json({
-  //     error: "missing name or number",
-  //   });
-  // }
-
-  // Person.find({ name: body.name }).then((persons) => {
-  //   if (persons.length !== 0) {
-  //     return response.status(400).json({
-  //       error: "name must be unique",
-  //     });
-  //   } else {
-  //     const person = new Person({
-  //       name: body.name,
-  //       number: body.number,
-  //     });
-  //     person.save().then((savedPerson) => {
-  //       response.json(savedPerson);
-  //     });
-  //   }
-  // });
-
   const person = new Person({
     name: body.name,
     number: body.number,
