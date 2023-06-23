@@ -8,11 +8,13 @@
     "dev": "nodemon index.js",
     "test": "\"Testing testing\"",
     "build:ui": "rm -rf build && cd ../frontend/ && npm run build && cp -rf build ../backend",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
+    "lint": "eslint ."
   },
   "author": "Huong Do",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.43.0",
     "nodemon": "^2.0.22"
   },
   "dependencies": {
