@@ -64,7 +64,7 @@ const App = () => {
           })
           .catch((err) => {
             console.log(err.response.data.error);
-            setMessage(error.response.data.error);
+            setMessage(err.response.data.error);
             setIsError(true);
             setTimeout(() => {
               setIsError(false);
